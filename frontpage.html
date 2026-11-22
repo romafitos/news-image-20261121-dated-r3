@@ -11,8 +11,10 @@ body{font-family:"Liberation Sans",Arial,sans-serif;color:#151515;padding:10px 1
 .strap{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;font-weight:700;letter-spacing:.6px;border-bottom:1px solid #444;padding-bottom:3px}
 .strap .red{color:#c0161c}
 .strap .mast{color:#333;letter-spacing:2px}
-.date{font-family:"Liberation Serif",serif;font-weight:700;color:#111;font-size:100px;line-height:88px;letter-spacing:-1px;white-space:nowrap;margin-top:3px;width:max-content;position:relative;left:50%;transform:translateX(-50%) scaleX(.8)}
-.deck{font-family:"Liberation Serif",serif;font-style:italic;font-size:17px;text-align:center;color:#333;margin:7px 0 4px;border-bottom:2px solid #111;padding-bottom:4px}
+.date{font-family:"Liberation Serif",serif;font-weight:700;color:#111;font-size:106px;line-height:90px;letter-spacing:-1px;white-space:nowrap;margin-top:2px;width:max-content;position:relative;left:50%;transform:translateX(-50%) scaleX(.755)}
+.deck{font-family:"Liberation Serif",serif;font-style:italic;font-size:17px;text-align:center;color:#333;margin:5px 0 3px;border-bottom:2px solid #111;padding-bottom:3px}
+.src{font-size:8.6px;font-weight:700;letter-spacing:.3px;color:#555;text-transform:uppercase;white-space:nowrap}
+.utc .ev b{color:#c0161c;margin-right:2px}
 .utc{position:relative;height:34px;margin:2px 0 4px}
 .utc .line{position:absolute;left:58px;right:4px;top:15px;height:2px;background:#555}
 .utc .lab{position:absolute;left:0;top:7px;font-size:10px;font-weight:700;color:#333;line-height:11px}
@@ -22,16 +24,18 @@ body{font-family:"Liberation Sans",Arial,sans-serif;color:#151515;padding:10px 1
 .utc .dot{position:absolute;top:12px;width:8px;height:8px;border-radius:50%;background:#1d3a5c;transform:translateX(-50%)}
 .heroes{display:flex;gap:10px}
 .hero{flex:1;background:#fffdf8;border:1px solid #bbb;padding:5px 6px 5px}
-.hero svg{display:block;width:100%;height:142px;border:1px solid #ccc}
-.hero h2{font-family:"Liberation Serif",serif;font-size:19px;line-height:20px;color:#111;margin:4px 0 2px}
-.hero p{font-size:11.6px;line-height:13.6px;color:#111}
+.hero svg{display:block;width:100%;height:116px;border:1px solid #ccc}
+.hero h2{font-family:"Liberation Serif",serif;font-weight:700;font-size:27px;line-height:27px;letter-spacing:-.6px;color:#111;margin:4px 0 3px}
+.hero p{font-size:11.4px;line-height:13.2px;color:#111}
 .num{color:#c0161c;font-weight:700}
 .tag{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.4px;border:1px solid #555;padding:0 3px;border-radius:2px;color:#333;vertical-align:1px}
-.nums{display:flex;justify-content:space-between;border-top:2px solid #111;border-bottom:1px solid #888;margin:6px 0 5px;padding:3px 2px;font-size:11.5px;color:#333}
-.nums b{font-size:15px;margin-right:2px}
+.nums{display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid #111;border-bottom:1px solid #888;margin:5px 0 5px;padding:1px 2px 2px;font-size:11px;line-height:13px;color:#333}
+.nums b{font-family:"Liberation Sans",sans-serif;font-size:25px;line-height:27px;letter-spacing:-.5px;margin-right:3px;color:#111}
 .cards{display:grid;grid-template-columns:repeat(5,1fr);gap:6px 7px}
 .card{background:#fffdf8;border:1px solid #bbb;padding:4px 5px 4px}
-.card svg{display:block;width:100%;height:66px;border:1px solid #ccc}
+.card svg{display:block;width:100%;height:52px;border:1px solid #ccc}
+.card .big{font-family:"Liberation Sans",sans-serif;font-weight:700;font-size:22px;line-height:22px;letter-spacing:-.4px;color:#111;margin-top:2px;white-space:nowrap}
+.card .big small{font-size:14px;letter-spacing:0}
 .card h3{font-family:"Liberation Serif",serif;font-size:13.5px;line-height:14.5px;color:#111;margin:3px 0 1px}
 .card h3 .num{font-family:"Liberation Sans",sans-serif;font-size:12px;margin-right:2px}
 .card p{font-size:10.4px;line-height:12.2px;color:#111}
@@ -40,20 +44,21 @@ body{font-family:"Liberation Sans",Arial,sans-serif;color:#151515;padding:10px 1
 .mapbox{width:300px}
 .mapbox svg{display:block;width:300px;height:150px;border:1px solid #999}
 .chips{display:flex;flex-wrap:wrap;gap:3px;margin-top:4px}
-.chips span{font-size:9.5px;font-weight:700;background:#e4dccb;border:1px solid #999;padding:1px 4px;border-radius:8px;color:#222}
+.chips span{font-size:9px;font-weight:700;border:1px solid rgba(0,0,0,.35);padding:1px 4px;border-radius:8px;color:#fff}
+.chips .eu{background:#1f4e8c}.chips .ea{background:#6a3d9a}.chips .se{background:#ad1457}.chips .oc{background:#546e7a}.chips .me{background:#a8590f}.chips .am{background:#2e7d32}.chips .sa{background:#00796b}.chips .af{background:#795548}.chips .gl{background:#3949ab}.chips .sp{background:#222}
 .index{flex:1}
-.index ol{columns:2;column-gap:12px;font-size:10.8px;line-height:13.4px;color:#111;padding-left:20px}
+.index ol{columns:2;column-gap:12px;font-size:12px;line-height:14.6px;color:#111;padding-left:20px}
 .index li{break-inside:avoid}
 .tg{font-size:7.5px;font-weight:700;border:1px solid #777;padding:0 2px;border-radius:2px;color:#444}
 .side{width:236px;display:flex;flex-direction:column;gap:5px}
 .left{border:1.5px solid #111;padding:4px 6px;background:#fffdf8}
 .left p{font-size:9.5px;font-style:italic;color:#333;margin-bottom:2px}
 .left ul{font-size:9.6px;line-height:12px;padding-left:12px;color:#222}
-.legend{font-size:9.5px;line-height:13px;color:#333}
+.legend{font-size:9.2px;line-height:13px;color:#333}
 </style>
 </head>
 <body>
-<div class="strap"><span class="red">31 STORIES · 7 REGIONS · EVERY ONE DATED SATURDAY 21 NOVEMBER 2026</span><span class="mast">THE WORLD IN ONE DAY</span></div>
+<div class="strap"><span class="red">34 STORIES · 8 REGIONS + GLOBAL + SPACE · EVERY ONE DATED SATURDAY 21 NOVEMBER 2026</span><span class="mast">THE WORLD IN ONE DAY</span></div>
 <div class="date">Saturday 21 November 2026</div>
 <div class="deck">Iran strikes Bahrain as tankers are hit off Hormuz · Drones set a Russian cargo ship ablaze off Finland · COP31 talks run into overtime</div>
 
@@ -62,16 +67,16 @@ body{font-family:"Liberation Sans",Arial,sans-serif;color:#151515;padding:10px 1
   <div class="line"></div>
   <!-- 0h at 58px, 24h at 1000px : 39.25 px per hour -->
   <div class="tk" style="left:58px"></div><div class="tk" style="left:293px"></div><div class="tk" style="left:529px"></div><div class="tk" style="left:764px"></div><div class="tk" style="left:998px"></div>
-  <div class="dot" style="left:64px"></div><div class="ev" style="left:82px">00:09 Peru M6.7</div>
-  <div class="dot" style="left:205px"></div><div class="ev b" style="left:205px">03:00 Basra fire</div>
-  <div class="dot" style="left:206px"></div><div class="ev" style="left:220px">03:45 Geneva talks end</div>
-  <div class="dot" style="left:254px"></div><div class="ev b" style="left:330px">05:00 tanker hit off Khasab</div>
-  <div class="dot" style="left:330px"></div><div class="ev" style="left:372px">morning: drones hit Sparta II</div>
-  <div class="dot" style="left:439px"></div><div class="ev b" style="left:470px">09:42 Banda Sea M6.8</div>
-  <div class="dot" style="left:451px"></div><div class="ev" style="left:540px">10:00 Banten factory fire</div>
-  <div class="dot" style="left:480px"></div><div class="ev b" style="left:610px">10:45 Qinghai M5.9</div>
-  <div class="dot" style="left:782px"></div><div class="ev" style="left:782px">18:24 BepiColombo at Mercury</div>
-  <div class="dot" style="left:960px"></div><div class="ev b" style="left:920px">late: COP31 text tabled</div>
+  <div class="dot" style="left:64px"></div><div class="ev" style="left:88px"><b>1</b>00:09 Peru M6.7</div>
+  <div class="dot" style="left:205px"></div><div class="ev b" style="left:205px"><b>9</b>03:00 Basra fire</div>
+  <div class="dot" style="left:206px"></div><div class="ev" style="left:222px"><b>5</b>03:45 Geneva talks end</div>
+  <div class="dot" style="left:254px"></div><div class="ev b" style="left:330px"><b>A</b>05:00 tanker hit off Khasab</div>
+  <div class="dot" style="left:330px"></div><div class="ev" style="left:376px"><b>B</b>morning: drones hit Sparta II</div>
+  <div class="dot" style="left:439px"></div><div class="ev b" style="left:472px"><b>15</b>09:42 Banda Sea M6.8</div>
+  <div class="dot" style="left:451px"></div><div class="ev" style="left:546px"><b>10</b>10:00 Banten factory fire</div>
+  <div class="dot" style="left:480px"></div><div class="ev b" style="left:614px"><b>16</b>10:45 Qinghai M5.9</div>
+  <div class="dot" style="left:782px"></div><div class="ev" style="left:782px"><b>6</b>18:24 BepiColombo at Mercury</div>
+  <div class="dot" style="left:960px"></div><div class="ev b" style="left:916px"><b>C</b>late: COP31 text tabled</div>
 </div>
 
 <div class="heroes">
@@ -103,8 +108,8 @@ body{font-family:"Liberation Sans",Arial,sans-serif;color:#151515;padding:10px 1
    <path d="M220 34 Q140 -6 58 90" fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="4 3"/>
    <path d="M58 90 l2 -9 l5 6 z" fill="#333"/>
   </svg>
-  <h2>Iran strikes Bahrain; two tankers hit off Hormuz</h2>
-  <p>Bahrain says an Iranian attack set an industrial site ablaze, no casualties; IRGC claims US targets. UKMTO: tankers struck <span class="num">11</span> and <span class="num">17</span> nm off Khasab. Tehran says the strait stays shut. <span class="tag">CONFIRMED</span> <span class="tag">CLAIM</span></p>
+  <h2>Iran strikes Bahrain; tankers hit off Hormuz</h2>
+  <p>Bahrain: Iranian attack sets an industrial site ablaze, no casualties. UKMTO: tankers struck <span class="num">11</span> and <span class="num">17</span> nm off Khasab.<br><span class="tag">CONFIRMED</span> <span class="src">UKMTO · Reuters · AFP</span></p>
  </div>
  <div class="hero">
   <svg viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg">
@@ -138,8 +143,8 @@ body{font-family:"Liberation Sans",Arial,sans-serif;color:#151515;padding:10px 1
     <text x="40" y="49" font-size="7" font-family="Liberation Sans" font-weight="700">RUSSIA</text>
     <circle cx="50" cy="27" r="3" fill="#c0161c"/><text x="4" y="30" font-size="6.5" font-family="Liberation Sans">Gulf of Finland</text></g>
   </svg>
-  <h2>Drones set Russian cargo ship ablaze off Finland</h2>
-  <p>Sanctioned freighter <i>Sparta II</i> hit by <span class="num">2</span> drones near Gogland, drifts into Finnish waters; all <span class="num">16</span> crew evacuated. Finland's military says Ukraine likely; Kyiv silent. <span class="tag">CONFIRMED</span> <span class="tag">CLAIM</span></p>
+  <h2>Drones set Russian ship ablaze off Finland</h2>
+  <p><i>Sparta II</i> hit by <span class="num">2</span> drones near Gogland, drifts into Finnish waters; <span class="num">16</span> crew evacuated. Finland: Ukraine likely.<br><span class="tag">CONFIRMED</span> <span class="tag">CLAIM</span> <span class="src">Reuters · CNN · Bloomberg</span></p>
  </div>
  <div class="hero">
   <svg viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg">
@@ -162,35 +167,35 @@ body{font-family:"Liberation Sans",Arial,sans-serif;color:#151515;padding:10px 1
    <!-- name plates -->
    <g font-size="6.5" font-family="Liberation Sans" fill="#fff"><rect x="40" y="114" width="22" height="7" fill="#222"/><rect x="90" y="114" width="22" height="7" fill="#222"/><rect x="190" y="114" width="22" height="7" fill="#222"/></g>
   </svg>
-  <h2>COP31 runs into overtime, split on fossil fuels</h2>
-  <p>Talks due to end Friday spill into Saturday as ministers leave; <span class="num">100</span> groups decry "one of the most disappointing COPs". Late Saturday, President Kurum tables a compromise text. <span class="tag">CONFIRMED</span></p>
+  <h2>COP31 runs into overtime over fossil fuels</h2>
+  <p>Talks meant to end Friday run on; <span class="num">100</span> groups protest. Late Saturday, President Kurum tables a compromise text.<br><span class="tag">CONFIRMED</span> <span class="src">AP · Al Jazeera</span></p>
  </div>
 </div>
 <div class="nums">
- <span><b class="num">6.7</b> Peru quake</span><span><b class="num">16</b> crew evacuated</span><span><b class="num">90.4%</b> tariff lines freed</span><span><b class="num">128</b> states at Geneva</span><span><b class="num">82,500</b> marchers in France</span><span><b class="num">36</b> missing in Banten</span><span><b class="num">37</b>-min Mercury burn</span>
+ <span><b>2</b>tankers hit off Khasab</span><span><b>16</b>crew off <i>Sparta II</i></span><span><b>100</b>groups' COP31 letter</span><span><b>~93,000</b>Peruvians lose power</span><span><b>144</b>held in France</span><span><b>15</b>rescued in Banten</span><span><b>1,967 L</b>liquor seized</span>
 </div>
 
 <div class="cards">
- <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#efe6d2"/><path d="M0 50 L20 30 L34 42 L52 18 L70 40 L84 28 L120 52 V64 H0 Z" fill="#9a8466"/><path d="M0 58 Q10 48 20 58 T40 58 T60 58 T80 58 T100 58 T120 58" stroke="#c0161c" stroke-width="1.6" fill="none"/><path d="M58 20 l-6 10 l7 0 l-5 12" stroke="#222" stroke-width="2" fill="none"/><text x="4" y="12" font-size="9" font-family="Liberation Sans" font-weight="700">PERU · M6.7</text></svg>
-  <h3><span class="num">1</span> Peru M6.7 quake felt in Lima</h3><p>00:09 UTC, 108 km deep near Junín; 1 dead, 16 hurt, ~93,000 lose power. <span class="tag">CONFIRMED</span></p></div>
- <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e4e9f2"/><rect x="8" y="12" width="40" height="27" fill="#1f3f8f"/><g fill="#f5c400"><circle cx="28" cy="17" r="1.6"/><circle cx="36" cy="20" r="1.6"/><circle cx="39" cy="26" r="1.6"/><circle cx="36" cy="33" r="1.6"/><circle cx="28" cy="35" r="1.6"/><circle cx="20" cy="33" r="1.6"/><circle cx="17" cy="26" r="1.6"/><circle cx="20" cy="20" r="1.6"/></g><rect x="72" y="12" width="40" height="13.5" fill="#d0101e"/><rect x="72" y="25.5" width="40" height="13.5" fill="#fff" stroke="#bbb"/><path d="M48 50 C56 44 64 44 72 50" stroke="#333" stroke-width="2" fill="none"/><rect x="44" y="48" width="32" height="10" fill="#fff" stroke="#333"/><path d="M50 53 h20" stroke="#333"/></svg>
-  <h3><span class="num">2</span> EU and Indonesia sign trade pact</h3><p>CEPA signed in Brussels after ~10 years; 90.4% of Indonesian tariff lines duty-free. <span class="tag">CONFIRMED</span></p></div>
- <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e8e2d6"/><g transform="translate(8 8)"><rect width="44" height="50" fill="#fff" stroke="#333"/><circle cx="22" cy="20" r="9" fill="#555"/><path d="M8 44 C8 30 36 30 36 44 Z" fill="#555"/><text x="22" y="9" text-anchor="middle" font-size="6" font-family="Liberation Sans" font-weight="700">FBI TOP 10</text></g><text x="56" y="22" font-size="9" font-family="Liberation Sans" font-weight="700">CAPTURED</text><path d="M60 30 h52 M60 38 h44" stroke="#777"/><path d="M62 48 l40 -2 l8 -4 l-6 8 l-42 2 Z" fill="#3a5130"/><path d="M80 40 l6 -6 h6 l-4 6" fill="#3a5130"/></svg>
-  <h3><span class="num">3</span> Mexico seizes "El Chapo Isidro"</h3><p>FBI top-10 fugitive flown to Mexico City; raid in Sinaloa leaves 11 dead. <span class="tag">CONFIRMED</span></p></div>
- <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e5eef0"/><rect x="10" y="34" width="70" height="10" rx="2" fill="#fff" stroke="#444"/><rect x="10" y="44" width="6" height="16" fill="#777"/><rect x="74" y="44" width="6" height="16" fill="#777"/><rect x="88" y="10" width="26" height="22" fill="#222"/><path d="M90 22 h4 l3 -6 l4 12 l3 -6 h8" stroke="#3fe07a" stroke-width="1.5" fill="none"/><rect x="99" y="32" width="2" height="28" fill="#555"/><path d="M24 30 c0-8 18-8 18 0 z" fill="#888"/><text x="10" y="14" font-size="9" font-family="Liberation Sans" font-weight="700">BRASÍLIA · ICU</text></svg>
-  <h3><span class="num">4</span> Bolsonaro moved to intensive care</h3><p>Hospital says ex-president has an abdominal obstruction; stable, no discharge date. <span class="tag">CONFIRMED</span></p></div>
- <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e9e9ee"/><g transform="translate(16 10)"><rect x="8" y="0" width="22" height="16" rx="3" fill="#666"/><rect x="12" y="5" width="5" height="4" fill="#ff5a3a"/><rect x="21" y="5" width="5" height="4" fill="#ff5a3a"/><rect x="4" y="16" width="30" height="22" fill="#888"/><rect x="0" y="40" width="10" height="12" fill="#666"/><rect x="28" y="40" width="10" height="12" fill="#666"/><path d="M34 22 h16" stroke="#444" stroke-width="4"/></g><circle cx="84" cy="34" r="20" fill="none" stroke="#c0161c" stroke-width="3"/><path d="M70 20 L98 48" stroke="#c0161c" stroke-width="3"/><text x="66" y="62" font-size="7" font-family="Liberation Sans" font-weight="700">GENEVA</text></svg>
-  <h3><span class="num">5</span> 128 states agree to draft robot-arms rules</h3><p>Geneva CCW talks end: two years to "elaborate" an instrument, nothing binding. <span class="tag">CONFIRMED</span></p></div>
- <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#0f1626"/><g fill="#fff"><circle cx="10" cy="8" r=".8"/><circle cx="40" cy="54" r=".8"/><circle cx="110" cy="12" r=".8"/><circle cx="100" cy="56" r=".8"/></g><circle cx="38" cy="34" r="20" fill="#9a958e"/><circle cx="32" cy="28" r="4" fill="#857f78"/><circle cx="46" cy="42" r="3" fill="#857f78"/><ellipse cx="38" cy="34" rx="34" ry="12" fill="none" stroke="#7aa7d8" stroke-dasharray="3 2"/><g transform="translate(84 20)"><rect width="12" height="10" fill="#d4b04a"/><rect x="-14" y="3" width="14" height="4" fill="#3a6ec8"/><rect x="12" y="3" width="14" height="4" fill="#3a6ec8"/><path d="M6 10 l-3 8 h6 z" fill="#7ac8ff"/></g><text x="66" y="60" font-size="8" font-family="Liberation Sans" font-weight="700" fill="#fff">MERCURY</text></svg>
-  <h3><span class="num">6</span> BepiColombo enters Mercury orbit</h3><p>ESA confirms capture after a 37-minute burn at 18:24 UTC; science from April 2027. <span class="tag">CONFIRMED</span></p></div>
- <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#efe9e0"/><g transform="translate(14 8)"><rect x="6" y="0" width="8" height="8" fill="#6a4"/><path d="M4 8 h12 l4 10 v28 h-20 v-28 z" fill="#8aa86a" stroke="#333"/><rect x="2" y="24" width="16" height="10" fill="#fff"/><path d="M6 26 l8 6 M14 26 l-8 6" stroke="#c0161c" stroke-width="1.6"/></g><g transform="translate(52 14)"><rect width="54" height="34" fill="#fff" stroke="#555"/><path d="M27 6 v22 M16 17 h22" stroke="#c0161c" stroke-width="4"/></g><text x="52" y="60" font-size="7.5" font-family="Liberation Sans" font-weight="700">MANIPUR</text></svg>
-  <h3><span class="num">7</span> Manipur toxic-liquor toll rises to 16</h3><p>Three more deaths on Saturday; ~600 in hospital, 6 arrested, 1,967 L seized. <span class="tag">CONFIRMED</span></p></div>
- <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e6e8ee"/><path d="M84 60 L96 10 L108 60 Z M90 40 h12 M93 26 h6" stroke="#444" stroke-width="2" fill="none"/><g fill="#555"><circle cx="12" cy="40" r="4"/><circle cx="24" cy="38" r="4"/><circle cx="36" cy="40" r="4"/><circle cx="48" cy="38" r="4"/><circle cx="60" cy="40" r="4"/><circle cx="72" cy="38" r="4"/><rect x="8" y="44" width="70" height="16"/></g><rect x="20" y="14" width="36" height="16" fill="#fff" stroke="#333"/><rect x="36" y="30" width="2" height="10" fill="#333"/><rect x="20" y="14" width="12" height="16" fill="#1f3f8f"/><rect x="44" y="14" width="12" height="16" fill="#d0101e"/></svg>
-  <h3><span class="num">8</span> France marches for a sixth Saturday</h3><p>Interior Ministry counts 82,500 (21,500 in Paris); organisers say 150,000. <span class="tag">CONFIRMED</span></p></div>
- <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e8dccb"/><rect x="18" y="28" width="56" height="32" fill="#777" stroke="#333"/><rect x="26" y="8" width="8" height="20" fill="#555"/><rect x="42" y="12" width="8" height="16" fill="#555"/><path d="M60 30 C54 18 66 14 62 2 C72 10 76 20 70 30 Z" fill="#f07a1a"/><path d="M28 8 C20 2 36 -2 30 -8" stroke="#555" stroke-width="4" fill="none"/><path d="M80 52 h36" stroke="#333" stroke-width="5"/><path d="M98 52 v-10" stroke="#333" stroke-width="3"/><text x="80" y="20" font-size="8" font-family="Liberation Sans" font-weight="700">BASRA</text></svg>
-  <h3><span class="num">9</span> Fire guts Basra power station</h3><p>Gas-pipeline blaze at the Hartha plant kills 4 and injures ~30; output halted. <span class="tag">CONFIRMED</span></p></div>
- <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e9e1d6"/><rect x="16" y="22" width="70" height="38" fill="#8a8a8a" stroke="#333"/><g fill="#333"><rect x="22" y="28" width="10" height="8"/><rect x="38" y="28" width="10" height="8"/><rect x="54" y="28" width="10" height="8"/><rect x="70" y="28" width="10" height="8"/><rect x="22" y="44" width="10" height="8"/><rect x="38" y="44" width="10" height="8"/></g><path d="M52 24 C44 12 56 8 50 -2 C62 6 70 14 62 24 Z M72 24 C68 16 76 12 74 4 C82 12 82 20 78 24 Z" fill="#f07a1a"/><path d="M40 14 C30 2 50 0 44 -10" stroke="#444" stroke-width="5" fill="none" opacity=".7"/><text x="90" y="58" font-size="8" font-family="Liberation Sans" font-weight="700">BANTEN</text></svg>
-  <h3><span class="num">10</span> Indonesian candy-factory fire</h3><p>Blaze in Serang, Banten kills 3; 36 workers missing, 15 rescued. <span class="tag">CONFIRMED</span></p></div>
+ <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#efe6d2"/><path d="M0 50 L20 30 L34 42 L52 18 L70 40 L84 28 L120 52 V64 H0 Z" fill="#9a8466"/><path d="M0 58 Q10 48 20 58 T40 58 T60 58 T80 58 T100 58 T120 58" stroke="#c0161c" stroke-width="1.6" fill="none"/><path d="M58 20 l-6 10 l7 0 l-5 12" stroke="#222" stroke-width="2" fill="none"/><text x="4" y="12" font-size="9" font-family="Liberation Sans" font-weight="700">PERU · M6.7</text></svg><div class="big">M6.7</div>
+  <h3><span class="num">1</span> Peru quake felt in Lima</h3><p>108 km deep; 1 dead, 16 hurt (Sat toll); ~93,000 lose power.<br><span class="tag">CONFIRMED</span> <span class="src">USGS · AP · AFP</span></p></div>
+ <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e4e9f2"/><rect x="8" y="12" width="40" height="27" fill="#1f3f8f"/><g fill="#f5c400"><circle cx="28" cy="17" r="1.6"/><circle cx="36" cy="20" r="1.6"/><circle cx="39" cy="26" r="1.6"/><circle cx="36" cy="33" r="1.6"/><circle cx="28" cy="35" r="1.6"/><circle cx="20" cy="33" r="1.6"/><circle cx="17" cy="26" r="1.6"/><circle cx="20" cy="20" r="1.6"/></g><rect x="72" y="12" width="40" height="13.5" fill="#d0101e"/><rect x="72" y="25.5" width="40" height="13.5" fill="#fff" stroke="#bbb"/><path d="M48 50 C56 44 64 44 72 50" stroke="#333" stroke-width="2" fill="none"/><rect x="44" y="48" width="32" height="10" fill="#fff" stroke="#333"/><path d="M50 53 h20" stroke="#333"/></svg><div class="big">90.4%</div>
+  <h3><span class="num">2</span> EU and Indonesia sign trade pact</h3><p>CEPA signed in Brussels; 90.4% of Indonesian tariff lines duty-free.<br><span class="tag">CONFIRMED</span> <span class="src">Reuters · EC · Antara</span></p></div>
+ <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e8e2d6"/><g transform="translate(8 8)"><rect width="44" height="50" fill="#fff" stroke="#333"/><circle cx="22" cy="20" r="9" fill="#555"/><path d="M8 44 C8 30 36 30 36 44 Z" fill="#555"/><text x="22" y="9" text-anchor="middle" font-size="6" font-family="Liberation Sans" font-weight="700">FBI TOP 10</text></g><text x="56" y="22" font-size="9" font-family="Liberation Sans" font-weight="700">CAPTURED</text><path d="M60 30 h52 M60 38 h44" stroke="#777"/><path d="M62 48 l40 -2 l8 -4 l-6 8 l-42 2 Z" fill="#3a5130"/><path d="M80 40 l6 -6 h6 l-4 6" fill="#3a5130"/></svg><div class="big">11 <small>DEAD</small></div>
+  <h3><span class="num">3</span> Mexico seizes "El Chapo Isidro"</h3><p>FBI top-10 fugitive caught; Sinaloa raid leaves 11 dead.<br><span class="tag">CONFIRMED</span> <span class="src">AP · CNN</span></p></div>
+ <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e5eef0"/><rect x="10" y="34" width="70" height="10" rx="2" fill="#fff" stroke="#444"/><rect x="10" y="44" width="6" height="16" fill="#777"/><rect x="74" y="44" width="6" height="16" fill="#777"/><rect x="88" y="10" width="26" height="22" fill="#222"/><path d="M90 22 h4 l3 -6 l4 12 l3 -6 h8" stroke="#3fe07a" stroke-width="1.5" fill="none"/><rect x="99" y="32" width="2" height="28" fill="#555"/><path d="M24 30 c0-8 18-8 18 0 z" fill="#888"/><text x="10" y="14" font-size="9" font-family="Liberation Sans" font-weight="700">BRASÍLIA · ICU</text></svg><div class="big">ICU</div>
+  <h3><span class="num">4</span> Bolsonaro moved to intensive care</h3><p>Ex-president has an abdominal obstruction; stable, no discharge date.<br><span class="tag">CONFIRMED</span> <span class="src">Reuters · AFP</span></p></div>
+ <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e9e9ee"/><g transform="translate(16 10)"><rect x="8" y="0" width="22" height="16" rx="3" fill="#666"/><rect x="12" y="5" width="5" height="4" fill="#ff5a3a"/><rect x="21" y="5" width="5" height="4" fill="#ff5a3a"/><rect x="4" y="16" width="30" height="22" fill="#888"/><rect x="0" y="40" width="10" height="12" fill="#666"/><rect x="28" y="40" width="10" height="12" fill="#666"/><path d="M34 22 h16" stroke="#444" stroke-width="4"/></g><circle cx="84" cy="34" r="20" fill="none" stroke="#c0161c" stroke-width="3"/><path d="M70 20 L98 48" stroke="#c0161c" stroke-width="3"/><text x="66" y="62" font-size="7" font-family="Liberation Sans" font-weight="700">GENEVA</text></svg><div class="big">128 <small>STATES</small></div>
+  <h3><span class="num">5</span> 128 states agree to draft robot-arms rules</h3><p>Geneva CCW talks end: two years to draft rules, nothing binding.<br><span class="tag">CONFIRMED</span> <span class="src">AFP · NPR</span></p></div>
+ <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#0f1626"/><g fill="#fff"><circle cx="10" cy="8" r=".8"/><circle cx="40" cy="54" r=".8"/><circle cx="110" cy="12" r=".8"/><circle cx="100" cy="56" r=".8"/></g><circle cx="38" cy="34" r="20" fill="#9a958e"/><circle cx="32" cy="28" r="4" fill="#857f78"/><circle cx="46" cy="42" r="3" fill="#857f78"/><ellipse cx="38" cy="34" rx="34" ry="12" fill="none" stroke="#7aa7d8" stroke-dasharray="3 2"/><g transform="translate(84 20)"><rect width="12" height="10" fill="#d4b04a"/><rect x="-14" y="3" width="14" height="4" fill="#3a6ec8"/><rect x="12" y="3" width="14" height="4" fill="#3a6ec8"/><path d="M6 10 l-3 8 h6 z" fill="#7ac8ff"/></g><text x="66" y="60" font-size="8" font-family="Liberation Sans" font-weight="700" fill="#fff">MERCURY</text></svg><div class="big">18:24 <small>UTC</small></div>
+  <h3><span class="num">6</span> BepiColombo enters Mercury orbit</h3><p>ESA confirms capture after a 37-minute burn; science from 2027.<br><span class="tag">CONFIRMED</span> <span class="src">ESA · AP</span></p></div>
+ <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#efe9e0"/><g transform="translate(14 8)"><rect x="6" y="0" width="8" height="8" fill="#6a4"/><path d="M4 8 h12 l4 10 v28 h-20 v-28 z" fill="#8aa86a" stroke="#333"/><rect x="2" y="24" width="16" height="10" fill="#fff"/><path d="M6 26 l8 6 M14 26 l-8 6" stroke="#c0161c" stroke-width="1.6"/></g><g transform="translate(52 14)"><rect width="54" height="34" fill="#fff" stroke="#555"/><path d="M27 6 v22 M16 17 h22" stroke="#c0161c" stroke-width="4"/></g><text x="52" y="60" font-size="7.5" font-family="Liberation Sans" font-weight="700">MANIPUR</text></svg><div class="big">16 <small>DEAD</small></div>
+  <h3><span class="num">7</span> Manipur toxic-liquor toll rises to 16</h3><p>Three more deaths on Saturday; ~600 in hospital, 6 arrested.<br><span class="tag">CONFIRMED</span> <span class="src">Jagran · TechTimes</span></p></div>
+ <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e6e8ee"/><path d="M84 60 L96 10 L108 60 Z M90 40 h12 M93 26 h6" stroke="#444" stroke-width="2" fill="none"/><g fill="#555"><circle cx="12" cy="40" r="4"/><circle cx="24" cy="38" r="4"/><circle cx="36" cy="40" r="4"/><circle cx="48" cy="38" r="4"/><circle cx="60" cy="40" r="4"/><circle cx="72" cy="38" r="4"/><rect x="8" y="44" width="70" height="16"/></g><rect x="20" y="14" width="36" height="16" fill="#fff" stroke="#333"/><rect x="36" y="30" width="2" height="10" fill="#333"/><rect x="20" y="14" width="12" height="16" fill="#1f3f8f"/><rect x="44" y="14" width="12" height="16" fill="#d0101e"/></svg><div class="big">82,500</div>
+  <h3><span class="num">8</span> France marches for a sixth Saturday</h3><p>Ministry counts 82,500 (21,500 in Paris); organisers say 150,000.<br><span class="tag">CONFIRMED</span> <span class="src">Reuters · Al Jazeera</span></p></div>
+ <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e8dccb"/><rect x="18" y="28" width="56" height="32" fill="#777" stroke="#333"/><rect x="26" y="8" width="8" height="20" fill="#555"/><rect x="42" y="12" width="8" height="16" fill="#555"/><path d="M60 30 C54 18 66 14 62 2 C72 10 76 20 70 30 Z" fill="#f07a1a"/><path d="M28 8 C20 2 36 -2 30 -8" stroke="#555" stroke-width="4" fill="none"/><path d="M80 52 h36" stroke="#333" stroke-width="5"/><path d="M98 52 v-10" stroke="#333" stroke-width="3"/><text x="80" y="20" font-size="8" font-family="Liberation Sans" font-weight="700">BASRA</text></svg><div class="big">4 <small>DEAD</small></div>
+  <h3><span class="num">9</span> Fire guts Basra power station</h3><p>Hartha gas-pipeline blaze kills 4, injures ~30; output halted.<br><span class="tag">CONFIRMED</span> <span class="src">Reuters · INA · Rudaw</span></p></div>
+ <div class="card"><svg viewBox="0 0 120 64"><rect width="120" height="64" fill="#e9e1d6"/><rect x="16" y="22" width="70" height="38" fill="#8a8a8a" stroke="#333"/><g fill="#333"><rect x="22" y="28" width="10" height="8"/><rect x="38" y="28" width="10" height="8"/><rect x="54" y="28" width="10" height="8"/><rect x="70" y="28" width="10" height="8"/><rect x="22" y="44" width="10" height="8"/><rect x="38" y="44" width="10" height="8"/></g><path d="M52 24 C44 12 56 8 50 -2 C62 6 70 14 62 24 Z M72 24 C68 16 76 12 74 4 C82 12 82 20 78 24 Z" fill="#f07a1a"/><path d="M40 14 C30 2 50 0 44 -10" stroke="#444" stroke-width="5" fill="none" opacity=".7"/><text x="90" y="58" font-size="8" font-family="Liberation Sans" font-weight="700">BANTEN</text></svg><div class="big">3 <small>DEAD ·</small> 36 <small>MISSING</small></div>
+  <h3><span class="num">10</span> Indonesian candy-factory fire</h3><p>Blaze in Serang, Banten; 15 workers rescued.<br><span class="tag">CONFIRMED</span> <span class="src">Reuters · Basarnas</span></p></div>
 </div>
 
 <div class="bottom">
@@ -218,45 +223,55 @@ body{font-family:"Liberation Sans",Arial,sans-serif;color:#151515;padding:10px 1
     <!-- NZ -->
     <path d="M290 122 l4 4 l-3 6 z"/>
    </g>
-   <g font-family="Liberation Sans" font-size="7" font-weight="700" fill="#fff">
-    <g transform="translate(64 94)"><circle r="5.5" fill="#1d3a5c"/><text x="0" y="2.5" text-anchor="middle">1</text></g>
-    <g transform="translate(46 50)"><circle r="5.5" fill="#1d3a5c"/><text x="0" y="2.5" text-anchor="middle">3</text></g>
-    <g transform="translate(84 84)"><circle r="5.5" fill="#1d3a5c"/><text x="0" y="2.5" text-anchor="middle">4</text></g>
-    <g transform="translate(140 26)"><circle r="5.5" fill="#1d3a5c"/><text x="0" y="2.5" text-anchor="middle">2</text></g>
-    <g transform="translate(150 34)"><circle r="5.5" fill="#1d3a5c"/><text x="0" y="2.5" text-anchor="middle">5</text></g>
-    <g transform="translate(142 40)"><circle r="5.5" fill="#1d3a5c"/><text x="0" y="2.5" text-anchor="middle">8</text></g>
-    <g transform="translate(166 18)"><circle r="6.5" fill="#111"/><text x="0" y="2.5" text-anchor="middle">B</text></g>
-    <g transform="translate(176 42)"><circle r="6.5" fill="#111"/><text x="0" y="2.5" text-anchor="middle">C</text></g>
-    <g transform="translate(188 52)"><circle r="6.5" fill="#111"/><text x="0" y="2.5" text-anchor="middle">A</text></g>
-    <g transform="translate(184 42)"><circle r="5.5" fill="#1d3a5c"/><text x="0" y="2.5" text-anchor="middle">9</text></g>
-    <g transform="translate(226 60)"><circle r="5.5" fill="#1d3a5c"/><text x="0" y="2.5" text-anchor="middle">7</text></g>
-    <g transform="translate(238 82)"><circle r="5.5" fill="#1d3a5c"/><text x="0" y="2.5" text-anchor="middle">10</text></g>
+   <!-- leader lines: true location dot -> pin -->
+   <g stroke="#333" stroke-width=".8" fill="none">
+    <path d="M142 25 L121 13"/><path d="M140 30 L121 31"/><path d="M146 32 L121 49"/>
+    <path d="M160 19 L151 8"/><path d="M166 37 L176 8"/>
+    <path d="M182 45 L186 67"/><path d="M186 50 L203 92"/>
+   </g>
+   <g fill="#111"><circle cx="142" cy="25" r="1.8"/><circle cx="140" cy="30" r="1.8"/><circle cx="146" cy="32" r="1.8"/><circle cx="160" cy="19" r="1.8"/><circle cx="166" cy="37" r="1.8"/><circle cx="182" cy="45" r="1.8"/><circle cx="186" cy="50" r="1.8"/></g>
+   <g font-family="Liberation Sans" font-size="10" font-weight="700" fill="#fff" stroke="#fff" stroke-width="1.4">
+    <circle cx="64" cy="94" r="8" fill="#2e7d32"/><circle cx="46" cy="48" r="8" fill="#2e7d32"/><circle cx="84" cy="88" r="8" fill="#2e7d32"/>
+    <circle cx="120" cy="13" r="8" fill="#ad1457"/><circle cx="120" cy="31" r="8" fill="#1f4e8c"/><circle cx="120" cy="49" r="8" fill="#3949ab"/>
+    <circle cx="151" cy="8" r="8" fill="#1f4e8c"/><circle cx="177" cy="8" r="8" fill="#1f4e8c"/>
+    <circle cx="186" cy="68" r="8" fill="#a8590f"/><circle cx="203" cy="93" r="8" fill="#a8590f"/>
+    <circle cx="224" cy="56" r="8" fill="#00796b"/><circle cx="240" cy="82" r="8" fill="#ad1457"/>
+   </g>
+   <g font-family="Liberation Sans" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">
+    <text x="64" y="97.5">1</text><text x="46" y="51.5">3</text><text x="84" y="91.5">4</text>
+    <text x="120" y="16.5">2</text><text x="120" y="34.5">8</text><text x="120" y="52.5">5</text>
+    <text x="151" y="11.5">B</text><text x="177" y="11.5">C</text>
+    <text x="186" y="71.5">9</text><text x="203" y="96.5">A</text>
+    <text x="224" y="59.5">7</text><text x="240" y="85.5" font-size="9">10</text>
    </g>
    <text x="6" y="146" font-size="7" font-family="Liberation Sans" fill="#333">A–C heroes · 1–10 cards · 6: in orbit at Mercury</text>
   </svg>
-  <div class="chips"><span>Europe 9</span><span>Asia-Pacific 8</span><span>Middle East 5</span><span>Americas 3</span><span>South Asia 3</span><span>Africa 2</span><span>Space 1</span></div>
+  <div class="chips"><span class="eu">Europe 7</span><span class="ea">East Asia 5</span><span class="me">Mideast 5</span><span class="se">SE Asia 4</span><span class="am">Americas 4</span><span class="sa">S Asia 3</span><span class="af">Africa 3</span><span class="oc">Oceania 1</span><span class="gl">Global 1</span><span class="sp">Space 1</span></div>
  </div>
  <div class="index">
   <div class="bh">ALSO ON SATURDAY</div>
   <ol start="11">
-   <li>Riyadh: 3 Houthi missiles intercepted <span class="tg">C</span></li>
-   <li>Lebanon: Aoun tells Israel to withdraw; strikes hit the south <span class="tg">C</span></li>
-   <li>Gaza City: strike on food-aid car kills 3 <span class="tg">R</span></li>
-   <li>Taiwan curbs short selling from 23 Nov <span class="tg">C</span></li>
-   <li>Banda Sea M6.8, 143 km deep, no tsunami <span class="tg">C</span></li>
-   <li>Qinghai, China M5.9 at 10:45 UTC <span class="tg">C</span></li>
-   <li>Taiwan reports 21 PLA aircraft nearby <span class="tg">CL</span></li>
-   <li>Bangladesh: ~80 garment plants shut in wage protests <span class="tg">C</span></li>
-   <li>Pakistan says 15 militants killed in Mastung <span class="tg">CL</span></li>
-   <li>Kyiv: UK deal to build Ukrainian strike drones <span class="tg">C</span></li>
-   <li>Rutte: NATO will defend "every inch" of Poland <span class="tg">C</span></li>
-   <li>CAF: all 54 members back Infantino, Abuja <span class="tg">C</span></li>
-   <li>CAF adopts Kiswahili as official language <span class="tg">C</span></li>
-   <li>Rugby: England 37–12 New Zealand <span class="tg">C</span></li>
-   <li>Rugby: Ireland 20–17 South Africa <span class="tg">C</span></li>
-   <li>Tennis: Alcaraz, Zverev reach Turin final <span class="tg">C</span></li>
-   <li>Cricket: Australia beat England, MCG T20 <span class="tg">C</span></li>
-   <li>Cricket: India 486/4 in Wellington Test <span class="tg">C</span></li>
+   <li>Riyadh: 3 Houthi missiles downed</li>
+   <li>Aoun tells Israel to quit Lebanon</li>
+   <li>Gaza: strike on aid car kills 3 <span class="tg">R</span></li>
+   <li>Taiwan curbs short selling</li>
+   <li>Banda Sea M6.8, no tsunami</li>
+   <li>Qinghai, China M5.9 (USGS)</li>
+   <li>Taiwan: 21 PLA aircraft nearby <span class="tg">CL</span></li>
+   <li>Dhaka: ~80 garment plants shut</li>
+   <li>Pakistan: 15 militants killed <span class="tg">CL</span></li>
+   <li>UK–Ukraine strike-drone deal</li>
+   <li>Rutte: NATO will defend Poland</li>
+   <li>CAF: 54 members back Infantino</li>
+   <li>CAF makes Kiswahili official</li>
+   <li>CAF $31.2M surplus; FIFA grant $25M</li>
+   <li>Osaka MAMA: BTS Album of the Year</li>
+   <li>Li Qiang hosts Singapore PM Wong</li>
+   <li>Vietnam passes land-seizure law</li>
+   <li>Zagreb rallies over clinic death</li>
+   <li>Canada joins NATO Innovation Fund</li>
+   <li>Rugby: England 37–12 New Zealand</li>
+   <li>Cricket: India 486/4, Wellington</li>
   </ol>
  </div>
  <div class="side">
@@ -272,10 +287,11 @@ body{font-family:"Liberation Sans",Arial,sans-serif;color:#151515;padding:10px 1
     <li>Denmark expels attaché — Fri 20 Nov</li>
     <li>Wall St / Taipei sell-off — Fri 20 Nov</li>
     <li>Nigeria boat capsizing — Fri 20 Nov</li>
-    <li>COP31 outcome, Las Vegas GP, Turin final — Sun 22 Nov</li>
+    <li>MAMA night 1, FTA 4.0 launch — Fri 20 Nov</li>
+    <li>COP31 outcome, Turin final — Sun 22 Nov</li>
    </ul>
   </div>
-  <div class="legend"><b>HOW SURE</b> · <span class="tag">CONFIRMED</span> C officials/agencies · <span class="tag">CLAIM</span> CL one side says · <span class="tag">REPORTED</span> R media, unverified</div>
+  <div class="legend"><b>HOW SURE</b> <span class="tag">CONFIRMED</span> officials · <span class="tag">CLAIM</span> CL one side · <span class="tag">REPORTED</span> R unverified · unmarked = confirmed</div>
  </div>
 </div>
 </body>
